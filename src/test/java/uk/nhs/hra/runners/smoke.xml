@@ -1,6 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Cucumber Suite">
-    <test name="RunCuke Test">
+<suite name="Smoke Suite">
+    <test name="Smoke Test">
+        <parameter name="cucumber.filter.tags" value="@smoke"/>
         <classes>
             <class name="uk.nhs.hra.runners.RunCuke"/>
         </classes>

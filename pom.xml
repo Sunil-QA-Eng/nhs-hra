@@ -17,6 +17,7 @@
     <slf4j.version>1.6.1</slf4j.version>
     <cucumber.version>7.15.0</cucumber.version>
     <selenium.version>4.21.0</selenium.version>
+    <suiteXmlFile>testng-suites/smoke.xml</suiteXmlFile>
   </properties>
 
   <dependencies>
@@ -94,7 +95,7 @@
         <configuration>
           <argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
           <suiteXmlFiles>
-            <suiteXmlFile>src/test/java/co/gamma/group/runners/testng.xml</suiteXmlFile>
+            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
